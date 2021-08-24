@@ -1,0 +1,61 @@
+@charset 'utf-8';
+//===============================================================
+//サイトの基本設定
+//================================================================
+
+//幅関係の設定 ---------------------------------------------------
+$width-base : 1400px;
+
+//フォント関係の設定 ----------------------------------------------
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("/www/assets/fonts/Avenir\ Next.ttc") format("ttc"); 
+}
+$font-1p : 'M PLUS 1p', sans-serif;
+$font-1c : 'M PLUS Rounded 1c', sans-serif;
+$font-avenir : 'Avenir Next';
+
+
+// 色関係の設定 ---------------------------------------------------
+$color-black01 : #333;
+$color-white01 : #ffffff;
+$color-green01 : rgb(106,184,45);
+$color-pink01 : rgb(246,164,203);
+$color-purple01 : rgb(182,192,255);
+$color-emerald01 : #95c6c6;
+$color-green02 : #00964f;
+$color-exOrange : orange;
+$color-exWhiteBack : whitesmoke;
+
+//ブレイクポイント ---------------------------------------------------- 
+
+$layer : (
+  tab3d : -10,
+  tabs : 1,
+  tab1 : 11,
+  tab2 : 12,
+  tab3 : 13,
+  tab4 : 14,
+);
+
+
+//z-indexの管理 ---------------------------------------------------------
+
+
+
+//ベースグループ -------------------------------------------------------
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  font-family: $font-1c;
+  background-color: $color-exOrange;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
